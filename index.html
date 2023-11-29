@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ne world of website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/style.js">
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">Website Templete </a>
+        <a href="pages/about.html">About Me</a>
+        <div class="dropdown">
+          <button class="dropbtn">Contact Us
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="pages/email.html">E-mail</a>
+            <a href="pages/phone.html">Call Me</a>
+            <a href="https://www.facebook.com/mdkawsar.miah.9/">Facebook</a>
+          </div>
+        </div>
+        <a href="#about">Carrer</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="pages/login page.html" class="sign-menu">Sign Up</a>
+    </div>
+    <h2 class="sign-up">Sign Up for create an account to our website</h2>
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required><br><br><br>
+  
+        Password: <input type="password" placeholder="Enter Password" name="psw" required value="123456" id="myInput"><br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="myFunction()">Show Password
+
+            <script> function myFunction() {
+              var x = document.getElementById("myInput");
+              if (x.type === "password") {
+                x.type = "text";
+              } 
+              else {
+                x.type = "password";
+              }
+            }
+            </script><br>
+
+  
+        <button type="submit">Login</button>
+        <label><br>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <a href="pages/forgage password.html" class="">Forget password!</a>
+    </div>
+    
+</body>
+</html>
